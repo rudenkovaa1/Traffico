@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="bg-image">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                            <li class="nav-item d-flex justify-content-start">
+                                <a class="nav-link " aria-current="page" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-start">
+                                <a class="nav-link" href="#">HOW TO</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-start">
+                                <a class="nav-link " aria-disabled="true">FAQS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn" type="submit">Contact us</button>
+                </div>
+            </nav>
+            <div class="b-text col-7">
+                <p>Your awesome traffic permit consultant.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">GET STARTED <img src="img/cтрелка.png" alt=""></button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">To close</button>
+                                <button type="button" class="btn btn-primary">Send a message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sec1">
+        <div class="container">
+            <div class="f-cards row d-flex justify-content-around">
+                <div class="card col-xxl-5 col-xl-5 col-lg-5 col-9">
+                    <img src="img/card1.png" class="card-img-top img-fluid" alt="">
+                    <div class="card-body mx-auto mt-4">
+                        <h5 class="card-title">ABOUT US</h5>
+                        <p class="card-text">The occupational traffic permit is one of the most important things in the company when carrying out freight transport.  In fact, it is a prerequisite for doing business traffic at all. </p>
+                        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="" data-bs-content="How do you do when you need to obtain a commercial traffic permit for freight transport to your business?">Important</button>
+                    </div>
+                </div>
+                <div class="card col-xxl-5 col-xl-5 col-lg-5 col-9">
+                    <img src="img/card2.png" class="card-img-top1 img-fluid" alt="">
+                    <div class="card-body mx-auto">
+                        <h5 class="card-title">HOW TO APPLY</h5>
+                        <p class="card-text">When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec2" style="background-color: #FDEDE8;">
+        <div class="container">
+            <div class="b-accordion">
+                <div class="t-acc col-xxl-6 col-xl-8">
+                    <h1 class="title">FAQ</h1>
+                    <p class="title-2">Questions and Answers on Professional Traffic Permits:</p>
+                </div>
+                <div class="accordion col-xxl-8 col-xl-9 col-lg-10 col-11" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is a professional traffic permit?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Traffic permits are a requirement for conducting professional traffic.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How to check the traffic condition?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What are the requirements for a professional traffic permit?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Are there professional traffic permit training courses at a distance?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-3">
+        <div class="container">
+            <div class="b-sl col-xxl-3 col-xl-4" style="padding-top: 10%;">
+                <div class="main-t">
+                    <h1 class="title">ABOUT US</h1>
+                    <img src="img/under-text.png" class="img-fluid" alt="">
+                </div>
+                <p class="title-2">Out Awesome Clients</p>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="b-carusel col-xxl-5 col-xl-5 col-ld-5 col-md-6 col-sm-7 col-8 mx-auto">
+                            <p class="carusel-style mx-auto">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+                            <div class="img-carusel d-flex justify-content-around">
+                                <img src="img/face1.png" class="img-fluid" alt="">
+                                <p>Isak Pettersson</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="b-carusel col-xxl-5 col-xl-5 col-ld-5 col-md-6 col-sm-7 col-8 mx-auto">
+                            <p class="carusel-style mx-auto">From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and certify the traffic control plan.</p>
+                            <div class="img-carusel d-flex justify-content-around">
+                                <img src="img/face2.png" class="img-fluid" alt="">
+                                <p>Simon Sandberg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="b-carusel col-xxl-5 col-xl-5 col-ld-5 col-md-6 col-sm-7 col-8 mx-auto">
+                            <p class="carusel-style mx-auto">An A-Line, or access restriction deed is a property right that has been obtained by CDOT for the sole purpose of prohibiting direct</p>
+                            <div class="img-carusel d-flex justify-content-around">
+                                <img src="img/face3.svg" class="img-fluid" alt="">
+                                <p>Isak Pettersson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" style="color: #ED4D47;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">&#8249;</span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" style="color: #ED4D47;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">&#8250;</span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="sec-4">
+        <div class="container">
+            <div class="b-form row d-flex justify-content-around">
+                <div class="p-fr col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-11">
+                    <p>We provide traffic management consultants so you get started quickly, contact us for a quote today!</p>
+                </div>
+                <form class="row g-3 col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-11" style="background-color: #fff;">
+                    <div class="col-md-3 col-sm-3 col-6">
+                        <label for="validationDefault01" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <label for="validationDefault02" class="form-label">Surname</label>
+                        <input type="text" class="form-control" id="validationDefault02" required>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-6">
+                        <label for="validationDefaultUsername" class="form-label">User name</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-6 d-flex flex-wrap">
+                        <label for="validationDefault03" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-6">
+                        <label for="validationDefault04" class="form-label">City</label>
+                        <select class="form-select" id="validationDefault04" required>
+                            <option selected disabled value="">Select...</option>
+                            <option>New York</option>
+                            <option>New Jersey</option>
+                            <option>Miami</option>
+                            <option>Moscow</option>
+                            <option>St-Petersberg</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-sm-5 col-6">
+                        <label for="validationDefault05" class="form-label">Index</label>
+                        <input type="text" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Accept the terms and conditions
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">GET STARTED <img src="img/cтрелка.png" alt=""></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="sec-5">
+        <div class="container">
+            <div class="podval d-flex justify-content-around" style="margin-top: 3%; margin-bottom: 3%;">
+                <p>Copyright @ 2019</p>
+                <img src="img/SM.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/bootstrap.js"></script>
+</body> 
+</html>

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+header{
+    background-image: url(img/header.png);
+    min-height: 1185px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.btn{
+    background-color: #EE4D47 !important;
+    color: #FFFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    width: 158px;
+    height: 60px;
+}
+.navbar-brand{
+    color: #FFFF;
+    font-family: DM Serif Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 32px */
+}
+.nav-link{
+    color: #FFFF !important;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+.navbar{
+    padding-top: 3%;
+}
+.navbar-toggler{
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-toggler-icon{
+    background-image: url(img/menu.png);
+}
+.b-text p{
+    color: #FFF;
+    font-family: DM Serif Display;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 100px */
+    display: flex;
+    width: 741px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 10%;
+}
+.btn-primary{
+    width: 220px;
+}
+.card{
+    margin-top: 15%;
+    border-radius: 70px;
+    background: #FDEDE8;
+    height: 790px;
+}
+.card-img-top{
+    width: 60%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+.card-img-top1{
+    width: 70%;
+}
+.card-title{
+    color: #EE4D47;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 166.667% */
+    letter-spacing: 2.4px;
+}
+.card-text{
+    color: var(--text, #402B2B);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px; /* 222.222% */
+}
+.card-body{
+    width: 80%;
+}
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-color: var(--bd-violet-bg);
+    --bs-popover-header-bg: var(--bd-violet-bg);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+}
+.b-accordion{
+    margin-top: 25%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+.title{
+    color: #EE4D47;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 166.667% */
+    letter-spacing: 2.4px;
+}
+.title-2{
+    color: #402B2B;
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 67.2px */
+    padding-top: 15%;
+}
+.accordion{
+    margin-top: 15%;
+}
+.accordion-item{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
+    margin-top: 2%;
+}
+.accordion-button{
+    color: var(--text, #402B2B);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500px;
+    line-height: 30px; /* 166.667% */
+}
+.accordion-body{
+    border-radius: 10px;
+    background: #FFF7F5;
+    box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
+    color: var(--text, #402B2B);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 166.667% */
+}
+.sec-3{
+    height: 903px;
+}
+.b-carusel{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
+    height: 360px;
+}
+body{
+    background: #FEF8F5;
+}
+.carusel-style{
+    color: var(--text, #402B2B);
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 187.5% */
+    width: 70%;
+    padding-top: 10%;
+}
+.img-carusel{
+    margin-top: 15%;
+}
+.img-carusel p{
+    color: var(--text, #402B2B);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+}
+.carousel-control-next{
+    font-size: 70px;
+    height: 80%;
+}
+.carousel-control-prev{
+    font-size: 70px;
+    height: 80%;
+}
+.p-fr{
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    border-left: #EE4D47;
+}
+.sec-4{
+    background-image: url(img/Footer.png);
+    min-height: 700px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b-form{
+    padding-top: 20%;
+}
+form{
+    width: 57%;
+    padding: 3%;
+    border-radius: 32px;
+}
+@media(max-width: 1200px){
+    header{
+        min-height: 925px;
+    }
+    .title-2{
+        padding-top: 5%;
+    }
+    .carousel{
+        margin-top: 10%;
+    }
+}
+@media(max-width: 992px){
+    .b-text p{
+        font-size: 85px;
+    }
+    .img-carusel{
+        margin-top: 10%;
+    }
+    .b-form{
+        padding-top: 28%;
+    }
+}
+@media(max-width: 782px){
+    .b-text p{
+        font-size: 70px;
+        /*color:#402B2B;*/
+        width: 550px;
+        margin-top: 5%;
+    }
+    header{
+        min-height: 760px;
+    }
+}
+@media(max-width: 768px){
+    .b-form{
+        padding-top: 38%;
+    }
+    .sec-3{
+        height: 830px;
+    }
+    .b-carusel{
+        height: 400px;
+    }
+}
+@media(max-width: 576px){
+    .b-text p{
+        font-size: 65px;
+        width: 450px;
+        margin-top: -7%;
+    }
+    header{
+        min-height: 550px;
+    }
+    .b-carusel{
+        height: 360px;
+    }
+    .accordion{
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .sec-4{
+        min-height: 780px;
+    }
+    .title-2{
+        font-size: 40px;
+    }
+    .card-text{
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .card{
+        height: 720px;
+    }
+}
+@media(max-width: 488px){
+    .btn{
+        height: 50px;
+        width: 140px;
+    }
+    .btn-primary{
+        width: 172px;
+    }
+    .navbar-brand img{
+        width: 200px;
+    }
+}
