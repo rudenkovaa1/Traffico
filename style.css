@@ -281,7 +281,7 @@ form{
         min-height: 550px;
     }
     .b-carusel{
-        height: 360px;
+        height: 370px;
     }
     .accordion{
         margin: 0 auto;
@@ -310,6 +310,28 @@ form{
         width: 172px;
     }
     .navbar-brand img{
-        width: 200px;
+        width: 170px;
+    }
+    .b-text p{
+        color: #343434;
+    }
+    .title-2{
+        font-size: 36px;
+        width: 85%;
+    }
+    .b-form{
+        padding-top: 43%;
+    }
+    .sec-3{
+        height: 685px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+}
+@media(max-width: 460px){
+    .b-text p{
+        width: 400px;
+        font-size: 60px;
     }
 }
