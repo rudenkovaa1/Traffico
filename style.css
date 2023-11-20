@@ -254,10 +254,10 @@ form{
         font-size: 70px;
         /*color:#402B2B;*/
         width: 550px;
-        margin-top: 5%;
+        margin-top: -9%;
     }
     header{
-        min-height: 760px;
+        min-height: 625px;
     }
 }
 @media(max-width: 768px){
@@ -273,12 +273,12 @@ form{
 }
 @media(max-width: 576px){
     .b-text p{
-        font-size: 65px;
+        font-size: 54px;
         width: 450px;
-        margin-top: -7%;
+        margin-top: -19%;
     }
     header{
-        min-height: 550px;
+        min-height: 480px;
     }
     .b-carusel{
         height: 370px;
@@ -312,9 +312,6 @@ form{
     .navbar-brand img{
         width: 170px;
     }
-    .b-text p{
-        color: #343434;
-    }
     .title-2{
         font-size: 36px;
         width: 85%;
@@ -332,6 +329,70 @@ form{
 @media(max-width: 460px){
     .b-text p{
         width: 400px;
-        font-size: 60px;
+        font-size: 43px;
+        margin-top: -25%;
+    }
+}
+@media(max-width: 428px){
+    .navbar-brand{
+        display: none;
+    }
+    .b-text p{
+        font-size: 40px;
+        margin-top: -36%;
+        width: 281px;
+    }
+    .card{
+        height: 605px;
+    }
+    .card-title{
+        font-size: 22px;
+    }
+    .card-text{
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .title-2{
+        font-size: 27px;
+    }
+    .title{
+        font-size: 22px;
+    }
+    header{
+        min-height: 435px;
+    }
+    .b-form{
+        padding-top: 50%;
+    }
+}
+@media(max-width: 378px){
+    .carusel-style{
+        font-size: 14px;
+    }
+    .b-text p{
+        font-size: 35px;
+        margin-top: -47%;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+    .card-title{
+        font-size: 20px;
+    }
+    .p-fr{
+        font-size: 18px;
+    }
+    .b-form{
+        padding-top: 55%;
+    }
+}
+@media(max-width: 321px){
+    .b-text p{
+        font-size: 28px;
+        margin-top: -60%;
+        width: 250px;
+    }
+    .podval img{
+        display: none;
     }
 }
