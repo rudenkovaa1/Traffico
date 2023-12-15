@@ -1,12 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  /*Убираем линии обводки некоторых браузеров*/
+  :focus,
+  :active {
+    outline: none;
+  }
+  
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  
+  /*задаем блочными теги Html5*/
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  html,
+  body {
+    font-family:"Almari", sans-serif;
+    height: 100%;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px ;
+  }
+  
+  /*задаем наследование шрифтов*/
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: none;
+    /* color: #292929; */
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
 header{
     background-image: url(img/header.png);
     min-height: 1185px;
     max-width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .btn{
     background-color: #EE4D47 !important;
@@ -20,6 +99,9 @@ header{
     letter-spacing: 0.8px;
     width: 158px;
     height: 60px;
+}
+.btn img{
+    vertical-align: baseline;
 }
 .navbar-brand{
     color: #FFFF;
@@ -40,6 +122,10 @@ header{
     letter-spacing: 0.8px;
     text-transform: uppercase;
 }
+.navbar-nav{
+    width: 46%;
+    justify-content: space-between;
+}
 .navbar{
     padding-top: 3%;
 }
@@ -47,7 +133,13 @@ header{
     border: none;
     color: rgba(255, 255, 255, 0.8);
 }
-
+.modal-form{
+    padding: 0px;
+    width: 100%;
+}
+.modal-footer{
+    justify-content: flex-start;
+}
 .navbar-toggler-icon{
     background-image: url(img/menu.png);
 }
@@ -135,7 +227,7 @@ header{
     padding-top: 15%;
 }
 .accordion{
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .accordion-item{
     border-radius: 10px;
@@ -148,7 +240,7 @@ header{
     font-family: Rubik;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500px;
+    font-weight: 600;
     line-height: 30px; /* 166.667% */
 }
 .accordion-body{
@@ -169,7 +261,7 @@ header{
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
-    height: 360px;
+    height: 340px;
 }
 body{
     background: #FEF8F5;
@@ -183,9 +275,12 @@ body{
     line-height: 30px; /* 187.5% */
     width: 70%;
     padding-top: 10%;
+    padding-bottom: 9%;
 }
 .img-carusel{
-    margin-top: 15%;
+    padding-left: 15%;
+    width: 52%;
+    justify-content: space-between;
 }
 .img-carusel p{
     color: var(--text, #402B2B);
@@ -194,6 +289,7 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: 30px; /* 187.5% */
+    margin: 0px;
 }
 .carousel-control-next{
     font-size: 70px;
@@ -202,6 +298,9 @@ body{
 .carousel-control-prev{
     font-size: 70px;
     height: 80%;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    background: none;
 }
 .p-fr{
     color: #FFF;
@@ -227,9 +326,17 @@ form{
     padding: 3%;
     border-radius: 32px;
 }
+.podval p{
+    margin: 0px;
+}
+@media(max-width: 1400px){
+    .img-carusel{
+        width: 60%;
+    }
+}
 @media(max-width: 1200px){
     header{
-        min-height: 925px;
+        min-height: 900px;
     }
     .title-2{
         padding-top: 5%;
@@ -239,26 +346,46 @@ form{
     }
 }
 @media(max-width: 992px){
+    .bg-image{
+        min-height: 760px;
+    }
     .b-text p{
         font-size: 85px;
     }
     .img-carusel{
-        margin-top: 10%;
+        width: 70%;
     }
     .b-form{
         padding-top: 28%;
     }
+    .navbar-nav{
+        width: 100%;
+    }
+}
+@media(max-width: 860px){
+    .bg-image{
+        min-height: 790px;
+    }
 }
 @media(max-width: 782px){
+    .bg-image{
+        min-height: 680px;
+    }
     .b-text p{
         font-size: 70px;
-        /*color:#402B2B;*/
         width: 550px;
         margin-top: -9%;
     }
     header{
         min-height: 625px;
     }
+    .img-carusel{
+        width: 75%;
+    }
+    .b-carusel{
+        height: 340px;
+    }
+    
 }
 @media(max-width: 768px){
     .b-form{
@@ -267,21 +394,41 @@ form{
     .sec-3{
         height: 830px;
     }
-    .b-carusel{
-        height: 400px;
+    .card{
+        height: 703px;
+    }
+    .img-carusel{
+        width: 80%;
+    }
+}
+@media(max-width: 680px){
+    .bg-image{
+        min-height: 600px;
     }
 }
 @media(max-width: 576px){
+    .bg-image{
+        min-height: 467px;
+    }
     .b-text p{
+        margin: 0 auto;
+        text-align: center;
         font-size: 54px;
         width: 450px;
-        margin-top: -19%;
+        height: 204px;
+    }
+    .b-text{
+        margin-top: 4%;
+        text-align: center;
     }
     header{
         min-height: 480px;
     }
+    .img-carusel{
+        width: 80%;
+    }
     .b-carusel{
-        height: 370px;
+        height: 340px;
     }
     .accordion{
         margin: 0 auto;
@@ -298,7 +445,13 @@ form{
         line-height: 35px;
     }
     .card{
-        height: 720px;
+        height: 648px;
+    }
+    .modal-footer {
+        justify-content: center;
+    }
+    .podval-img{
+        width: 40%;
     }
 }
 @media(max-width: 488px){
@@ -323,23 +476,54 @@ form{
         height: 685px;
     }
     .card-text{
-        font-size: 14px;
+        font-size: 16px;
+    }
+    .b-carusel{
+        height: 350px;
     }
 }
 @media(max-width: 460px){
+    .bg-image{
+        min-height: 420px;
+    }
     .b-text p{
         width: 400px;
         font-size: 43px;
-        margin-top: -25%;
+        margin-top: 0%;
+        height: 154px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+    .img-carusel{
+        width: 90%;
+    }
+    .b-carusel{
+        height: 370px;
+    }
+    .img-carusel p{
+        width: 50%;
+        line-height: 23px;
+    }
+    .img-carusel{
+        width: 70%;
+    }
+    .podval-img{
+        width: 30%;
+    }
+    .podval-img img{
+        width: 25%;
     }
 }
 @media(max-width: 428px){
+    .bg-image{
+        min-height: 360px;
+    }
     .navbar-brand{
         display: none;
     }
     .b-text p{
         font-size: 40px;
-        margin-top: -36%;
         width: 281px;
     }
     .card{
@@ -349,8 +533,8 @@ form{
         font-size: 22px;
     }
     .card-text{
-        font-size: 13px;
-        line-height: 24px;
+        font-size: 16px;
+        line-height: 28px;
     }
     .title-2{
         font-size: 27px;
@@ -364,35 +548,82 @@ form{
     .b-form{
         padding-top: 50%;
     }
+    .accordion-body{
+        font-size: 14px;
+    }
+    .b-carusel{
+        height: 390px;
+    }
+    .img-carusel{
+        width: 80%;
+    }
+}
+@media(max-width: 390px){
+    .card-title{
+        font-size: 20px;
+    }
 }
 @media(max-width: 378px){
+    .bg-image{
+        min-height: 320px;
+    }
     .carusel-style{
         font-size: 14px;
     }
     .b-text p{
         font-size: 35px;
-        margin-top: -47%;
+        height: 120px;
     }
     .card-text{
-        font-size: 12px;
+        font-size: 14px;
     }
     .card-title{
-        font-size: 20px;
-    }
-    .p-fr{
         font-size: 18px;
     }
+    .p-fr{
+        font-size: 17px;
+        line-height: 25px;
+    }
     .b-form{
-        padding-top: 55%;
+        padding-top: 65%;
+    }
+    .img-carusel p{
+       font-size: 14px;
     }
 }
+@media(max-width: 350px){
+    .bg-image{
+        min-height: 300px;
+    }
+    .card{
+        height: 523px;
+    }
+    .card-body{
+        padding: 0px;
+    }
+}
+@media(max-width: 340px){
+    .bg-image{
+        min-height: 250px;
+    }
+    .card{
+        height: 538px;
+    }
+    .img-carusel{
+        width: 85%;
+    }
+    .podval-img{
+        width: 40%;
+    }
+}
+
 @media(max-width: 321px){
     .b-text p{
         font-size: 28px;
-        margin-top: -60%;
         width: 250px;
+        height: 110px;
     }
-    .podval img{
-        display: none;
+    .b-carusel{
+        height: 400px;
     }
 }

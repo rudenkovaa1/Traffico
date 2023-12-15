@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="bg-image">
+    <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -19,21 +19,21 @@
                     <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                            <li class="nav-item d-flex justify-content-start">
-                                <a class="nav-link " aria-current="page" href="#">ABOUT</a>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex justify-content-start" href="#about">ABOUT</a>
                             </li>
-                            <li class="nav-item d-flex justify-content-start">
-                                <a class="nav-link" href="#">HOW TO</a>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex justify-content-start" href="#howto">HOW TO</a>
                             </li>
-                            <li class="nav-item d-flex justify-content-start">
-                                <a class="nav-link " aria-disabled="true">FAQS</a>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex justify-content-start" href="#faq">FAQS</a>
                             </li>
                         </ul>
                     </div>
                     <button class="btn" type="submit">Contact us</button>
                 </div>
             </nav>
-            <div class="b-text col-7">
+            <div class="b-text col-sm-7 col-xs-3 bg-image">
                 <p>Your awesome traffic permit consultant.</p>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">GET STARTED <img src="img/cтрелка.png" alt=""></button>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -44,7 +44,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <form class="modal-form">
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Recipient:</label>
                                         <input type="text" class="form-control" id="recipient-name">
@@ -65,7 +65,7 @@
             </div>
         </div>
     </header>
-    <section class="sec1">
+    <section class="sec1" id="howto">
         <div class="container">
             <div class="f-cards row d-flex justify-content-around">
                 <div class="card col-xxl-5 col-xl-5 col-lg-5 col-9">
@@ -80,13 +80,13 @@
                     <img src="img/card2.png" class="card-img-top1 img-fluid" alt="">
                     <div class="card-body mx-auto">
                         <h5 class="card-title">HOW TO APPLY</h5>
-                        <p class="card-text">When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.</p>
+                        <p class="card-text">When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="sec2" style="background-color: #FDEDE8;">
+    <section class="sec2" id="faq" style="background-color: #FDEDE8;">
         <div class="container">
             <div class="b-accordion">
                 <div class="t-acc col-xxl-6 col-xl-8">
@@ -114,7 +114,7 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                Traffic permits are a requirement for conducting professional traffic.
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                Traffic permits are a requirement for conducting professional traffic.
                             </div>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                Traffic permits are a requirement for conducting professional traffic.
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
             </div>
         </div>
     </section>
-    <section class="sec-3">
+    <section class="sec-3" id="about">
         <div class="container">
             <div class="b-sl col-xxl-3 col-xl-4" style="padding-top: 10%;">
                 <div class="main-t">
@@ -160,7 +160,7 @@
                     <div class="carousel-item active">
                         <div class="b-carusel col-xxl-5 col-xl-5 col-ld-5 col-md-6 col-sm-7 col-8 mx-auto">
                             <p class="carusel-style mx-auto">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
-                            <div class="img-carusel d-flex justify-content-around">
+                            <div class="img-carusel d-flex">
                                 <img src="img/face1.png" class="img-fluid" alt="">
                                 <p>Isak Pettersson</p>
                             </div>
@@ -168,8 +168,8 @@
                     </div>
                     <div class="carousel-item">
                         <div class="b-carusel col-xxl-5 col-xl-5 col-ld-5 col-md-6 col-sm-7 col-8 mx-auto">
-                            <p class="carusel-style mx-auto">From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and certify the traffic control plan.</p>
-                            <div class="img-carusel d-flex justify-content-around">
+                            <p class="carusel-style mx-auto">From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS).</p>
+                            <div class="img-carusel d-flex">
                                 <img src="img/face2.png" class="img-fluid" alt="">
                                 <p>Simon Sandberg</p>
                             </div>
@@ -177,8 +177,8 @@
                     </div>
                     <div class="carousel-item">
                         <div class="b-carusel col-xxl-5 col-xl-5 col-ld-5 col-md-6 col-sm-7 col-8 mx-auto">
-                            <p class="carusel-style mx-auto">An A-Line, or access restriction deed is a property right that has been obtained by CDOT for the sole purpose of prohibiting direct</p>
-                            <div class="img-carusel d-flex justify-content-around">
+                            <p class="carusel-style mx-auto">An A-Line, or access restriction deed is a property right that has been obtained by CDOT for the sole purpose of prohibiting direct.</p>
+                            <div class="img-carusel d-flex">
                                 <img src="img/face3.svg" class="img-fluid" alt="">
                                 <p>Isak Pettersson</p>
                             </div>
@@ -252,11 +252,15 @@
             </div>
         </div>
     </section>
-    <section class="sec-5">
+    <section class="sec-5 pb-3">
         <div class="container">
             <div class="podval d-flex justify-content-around" style="margin-top: 3%; margin-bottom: 3%;">
                 <p>Copyright @ 2019</p>
-                <img src="img/SM.png" class="img-fluid" alt="">
+                <div class="podval-img d-flex justify-content-between col-lg-2 col-md-3 col-sm-4">
+                    <img src="img/f.svg" class="img-fluid" alt="">
+                    <img src="img/t.svg" class="img-fluid" alt="">
+                    <img src="img/i.svg" class="img-fluid" alt="">
+                </div>
             </div>
         </div>
     </section>
